@@ -1,0 +1,43 @@
+.my-carousel-control {
+    position: absolute;
+    top: 45%;
+    display: block;
+    padding: 5px;
+    background-color: #eee;
+    color: #000;
+    border-radius: 100%;
+    min-width: 40px;
+    min-height: 40px;
+    line-height: 30px;
+    text-align: center;
+    transition: all 1s;
+}
+
+
+/* khi đưa chuột vào */
+
+.carousel:hover .my-carousel-control {
+    opacity: 1;
+    transition: all 1s;
+}
+
+.carousel:hover .left.my-carousel-control {
+    left: 15px;
+}
+
+.carousel:hover .right.my-carousel-control {
+    right: 15px;
+}
+
+
+/* vị trí mặc định */
+
+.left.my-carousel-control {
+    opacity: 0;
+    left: 100px;
+}
+
+.right.my-carousel-control {
+    opacity: 0;
+    right: 100px;
+}
